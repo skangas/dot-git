@@ -1,0 +1,23 @@
+[user]
+        name = "Stefan Kangas"
+        email = "skangas@skangas.se"
+        editor = emacs
+        signingkey = 5957135D
+[core]
+	pager = "less --quit-if-one-screen --raw-control-chars --no-init --hilite-search --SILENT"
+[alias]
+	br = branch
+	ci = commit -a
+	co = checkout
+	files = ls-files -v --deleted --modified --others --directory --no-empty-directory --exclude-standard
+	st = status
+	sum = log --pretty=format:\"%h %Cblue%ci%Creset %Cgreen%cn%Creset %s\"
+	svn-diff = !git-svn-diff.sh
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+	ui = auto
+[merge]
+        tool = "emerge"
