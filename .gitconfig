@@ -5,6 +5,7 @@
         signingkey = 5957135D
 [core]
 	pager = "less --quit-if-one-screen --raw-control-chars --no-init --hilite-search --SILENT"
+	excludesfile = /home/ekanste/.gitignore_global
 [alias]
 	br = branch
 	ci = commit -a
