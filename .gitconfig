@@ -22,3 +22,5 @@
 	ui = auto
 [merge]
         tool = "emerge"
+[push]
+	default = simple
