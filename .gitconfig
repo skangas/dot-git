@@ -1,18 +1,20 @@
 [user]
         name = "Stefan Kangas"
-        email = "skangas@skangas.se"
+        email = "stefankangas@gmail.com"
         editor = emacs
         signingkey = 5957135D
 [core]
 	pager = "less --quit-if-one-screen --raw-control-chars --no-init --hilite-search --SILENT"
-	excludesfile = /home/ekanste/.gitignore_global
+	excludesfile = /home/skangas/.gitignore_global
 [alias]
 	br = branch
 	ci = commit -a
 	co = checkout
 	files = ls-files -v --deleted --modified --others --directory --no-empty-directory --exclude-standard
 	st = status
-	sum = log --pretty=format:\"%h %Cblue%ci%Creset %Cgreen%cn%Creset %s\"
+        ### FIXME: When we have git > 2.6.0 we can add:
+        # --date=format:'%Y-%m-%d %H:%M:%S'
+	hist = log --pretty=format:\"%h %Cblue%ci%Creset %Cgreen%cn%Creset %s\"
 	svn-diff = !git-svn-diff.sh
 [color]
 	branch = auto
