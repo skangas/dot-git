@@ -25,4 +25,4 @@
 [merge]
         tool = "emerge"
 [push]
-#	default = simple
+	default = simple
