@@ -24,3 +24,5 @@
 	ui = auto
 [merge]
         tool = "emerge"
+[transfer]
+	fsckObjects = true
