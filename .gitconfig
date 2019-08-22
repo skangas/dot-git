@@ -10,6 +10,7 @@
 	br = branch
 	ci = commit -a
 	co = checkout
+        pro = pull --rebase origin master
 	files = ls-files -v --deleted --modified --others --directory --no-empty-directory --exclude-standard
 	st = status
         ### FIXME: When we have git > 2.6.0 we can add:
