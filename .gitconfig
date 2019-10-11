@@ -10,12 +10,15 @@
 	br = branch
 	ci = commit -a
 	co = checkout
+        pro = pull --rebase origin master
 	files = ls-files -v --deleted --modified --others --directory --no-empty-directory --exclude-standard
 	st = status
+        # hist = log --format='%ad %h %s' --date=short -n 10
         ### FIXME: When we have git > 2.6.0 we can add:
         # --date=format:'%Y-%m-%d %H:%M:%S'
-	hist = log --pretty=format:\"%h %Cblue%ci%Creset %Cgreen%cn%Creset %s\"
+	hist = log --pretty=format:\"%h %Cblue%ad%Creset %Cgreen%cn%Creset %s\" --date=short -n 10
 	svn-diff = !git-svn-diff.sh
+        update-date = commit --amend --reset-author --no-edit
 [color]
 	branch = auto
 	diff = auto
