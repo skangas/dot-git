@@ -10,7 +10,7 @@
 	br = branch
 	ci = commit -a
 	co = checkout
-        pro = pull --rebase origin master
+        pr = pull --rebase
 	files = ls-files -v --deleted --modified --others --directory --no-empty-directory --exclude-standard
 	st = status
         # hist = log --format='%ad %h %s' --date=short -n 10
