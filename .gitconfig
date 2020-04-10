@@ -19,6 +19,7 @@
 	hist = log --pretty=format:\"%h %Cblue%ad%Creset %Cgreen%cn%Creset %s\" --date=short -n 10
 	svn-diff = !git-svn-diff.sh
         update-date = commit --amend --reset-author --no-edit
+	showtrackedignored = ls-files -i --exclude-standard
 [color]
 	branch = auto
 	diff = auto
