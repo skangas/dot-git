@@ -30,3 +30,5 @@
         tool = "emerge"
 [transfer]
 	fsckObjects = true
+[github]
+	user = skangas
