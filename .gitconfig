@@ -32,3 +32,5 @@
 	fsckObjects = true
 [github]
 	user = skangas
+[diff "org"]
+	xfuncname = "^(\\*+ [a-zA-Z0-9]+.+)$"
