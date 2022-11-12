@@ -25,7 +25,7 @@
 	diff = auto
 	interactive = auto
 	status = auto
-	ui = always
+	ui = auto
 [merge]
         tool = "emerge"
 [transfer]
